@@ -1,0 +1,179 @@
+/*Creación de una fuente propia*/
+@font-face {
+  font-family: "Agdasima";
+  src: url(/assets/fonts/Agdasima/Agdasima-Regular.ttf) format('truetype');
+}
+
+
+/* Estilo para el cuerpo de la página con un gradiente horizontal */
+body {
+  font-family: "Agdasima", Arial, sans-serif;
+  margin-left: 40px;
+  margin-right: 100px;
+  margin-top: 60px;
+  padding: 10px;
+  background: linear-gradient(to right, #2353ff, #01914e,  #2353ff);
+  background-size: 200% 100%; /* Ancho del gradiente */
+  color: #000000; /* Cambia el color del texto según tu preferencia para que sea visible en el gradiente */
+  animation: gradientAnimation_bg 7s linear infinite; /* Ajusta la duración y el tipo de animación según tus preferencias */
+}
+
+/* Animación para el gradiente del fondo*/
+@keyframes gradientAnimation_bg {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* ---------------------Estilo para el título principal H1------------------*/
+h1 {
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(to right, red, black, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+@keyframes gradientAnimation_h1 {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+/* Aplicar la animación al h1 */
+h1 {
+  animation: gradientAnimation_h1 7s linear infinite;
+  background-size: 200% 100%;
+}
+/* -----------------------------------------------------------------------------*/
+
+
+/* Estilo para el encabezado */
+header {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+
+/* Estilo para el contenido de los div */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+
+/* Estilo para la barra de navegación */
+nav {
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Estilo para los enlaces de navegación */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+/* Estilo para los enlaces de navegación al pasar el cursor */
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Estilo para los encabezados de sección */
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  line-height: 1.3px;
+}
+
+/* Estilo para los encabezados de subseccion */
+h3 {
+  line-height: 1.3px;
+}
+
+/* Estilo para los encabezados de subsubseccion */
+h4 {
+  line-height: 1.3px;
+}
+
+
+/* Estilo para los párrafos de texto */
+p {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Estilo para los enlaces dentro del contenido */
+.container a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* Estilo para los enlaces dentro del contenido al pasar el cursor */
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para las listas */
+ul, ol {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 1px;;
+}
+
+/* Estilo para las imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Estilo para los bloques de código */
+code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  font-family: Monaco, monospace;
+  font-size: 14px;
+}
+
+/* Estilo para las tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}

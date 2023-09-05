@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1><strong>DOCUMENTACION CMS Y ARTES MARCIALES MIXTAS</strong></h1>
+  <h1 id="id_inicio"><strong>DOCUMENTACION CMS Y ARTES MARCIALES MIXTAS</strong></h1>
   <header>
     <li> La temática del CMS va a ser MMS o Artes Marciales Mixtas. En este gestor de contenidos se va a poder
       encontrar desde noticias de las últimas jornadas, escritas por nosotros como externas, hasta el perfil
@@ -17,13 +17,18 @@
   </header>
   <main>
     <nav>
-      <a href="#id_noticias">1. Noticias</a>
-      <a href="#id_competiciones">2. Competiciones</a>
+      <a href="#id_noticias">1. NOTICIAS</a>
+      <a href="#id_competiciones">2. COMPETICIONES</a>
+      <a href="#id_ranking">3. RANKINGS</a>
+      <a href="#id_calendario">4. CALENDARIO</a>
+      <a href="#id_videos">5. VÍDEOS</a>
+      <a href="#id_sorteos">6. SORTEOS</a>
+      <a href="#id_sobre_nosotros">7. SOBRE NOSOTROS</a>
 
     </nav>
-    <div class="container">
-      <h2>Secciones o entradas principales</h2><br>
-      <h3 id="id_noticias"><strong>1. Noticias:</strong></h3>
+    <h2>Secciones o entradas principales</h2><br>
+    <div class="container" id="id_noticias">
+      <h3><strong>1. Noticias:</strong></h3>
       <p> - Las noticias podrán ser de dos tipos: internas, escritas por los mismos autores que trabajan para la
         empresa, y externas, extraídas de otros medios de comunicación, CMSs, foros, periódicos etc.</p>
       <ul>
@@ -65,50 +70,125 @@
           </p>
         </ol>
       </ul>
+      <a href="#id_inicio" style="float: right; color: rgb(110, 30, 144);"><span
+          style="font-size: 30px;">↑</span>Volver</a>
+    </div>
+
+    <div class="container" id="id_competiciones">
       <!------------------------------------------>
-      <h3 id="id_competiciones"><strong>2. Competiciones:</strong></h3>
+      <h3><strong>2. Competiciones:</strong></h3>
       <p> - En la sección de competiciones habrá varios subapartados, que se corresponderán con cada una de las ligas
         privadas o promotores de cada evento MMA. En estos submenus se encuentran los siguientes: UFC, UWC ,
         Bellator MMA, combate global y Campeonato Absoluto Akhmat. Luego de todas estas, una que englobará al resto
         llamada OTRAS.
       </p>
+      <p> - Cada una de las ligas tendrá su propio entrada dentro del menú principal, siendo estas accesibles desde
+        este.
+      </p>
       <ul>
-        <h3>
-          <li><strong>UFC</strong></li>
-        </h3>
-        <p></p>
-        <p></p>
+        <h4>
+          <li><strong>UFC, UWC, Bellator MMA, combate global y Campeonato Absoluto Akhmat</strong></li>
+        </h4>
 
-        <h3>
-          <li><strong>UWC</strong></li>
-        </h3>
-        <p></p>
-        <p></p>
-        <h3>
-          <li><strong>Bellator MMA</strong></li>
-        </h3>
-        <p></p>
-        <p></p>
-        <h3>
-          <li><strong>combate global</strong></li>
-        </h3>
-        <p></p>
-        <p></p>
-        <h3>
-          <li><strong>Campeonato Absoluto Akhmat</strong></li>
-        </h3>
-        <p></p>
-        <p></p>
-        <h3>
+        <p>En ecada una de las entradas UFC, UWC ,Bellator MMA, combate global y Campeonato Absoluto Akhmat
+          se mostrarán todos los artículos, noticias, eventos relacionados, combates, F2F y pesajes de los
+          luchadores/as.</p>
+        <p>En cada apartado también habra la parte del calendario que indica los combates de la de su entrada
+          respectiva y un enlace que llevará a la información del combate asi como a los perfiles de
+          ambos luchadores. </p>
+        <p>Esta información sera común y aplicada a cada uno de las subsecciones de esta sección referenciadas
+          a una liga específica, es decir, esto aplica a todo menos a OTROS.</p>
+        </p>
+        <h4>
           <li><strong>OTRAS</strong></li>
-        </h3>
-        <p></p>
-        <p></p>
-
-
-
-        <!------------------------------------------>
+        </h4>
+        <p>Esta subsección contendrá todos los artículos de otras ligas distintas a las anteriores, referenciando
+          cada liga mediante una etiqueta, habiendo que crear una nueva si el artículo habla de una que no existe
+          previamente.</p>
+      </ul>
+      <a href="#id_inicio" style="float: right; color: rgb(110, 30, 144);"><span
+          style="font-size: 30px;">↑</span>Volver</a>
     </div>
+    <!------------------------------------------>
+    <div class="container" id="id_ranking">
+      <h3><strong>3. Rankings:</strong></h3>
+      <p>
+        En esta entrada se encuentran ordenados por victorias todos los luchadores/as de cada peso. Se incluira
+        el número de su posicion, y su nombre completo al lado.
+      </p>
+      <div class="container">
+        <h5>Masculinos</h5>
+        <ul>
+          <li>Pound for Pound Masculino</li>
+          <li>Peso Pesado</li>
+          <li>Peso Medio Pesado</li>
+          <li>Peso Medio</li>
+          <li>Peso Welter</li>
+          <li>Peso Ligero</li>
+          <li>Peso Pluma</li>
+          <li>Peso Gallo</li>
+          <li>Peso Mosca</li>
+        </ul>
+      </div>
+      <div class="container">
+        <h5>Femenino</h5>
+        <ul>
+          <li>Pound for Pound Femenino</li>
+          <li>Peso Gallo Femenino</li>
+          <li>Peso Mosca Femenino</li>
+          <li>Peso Paja</li>
+        </ul>
+      </div>
+      <a href="#id_inicio" style="float: right; color: rgb(110, 30, 144);"><span
+          style="font-size: 30px;">↑</span>Volver</a>
+    </div>
+
+    <!------------------------------------------>
+
+    <div class="container" id="id_calendario">
+      <h3><strong>4. Calendario:</strong></h3>
+      <p>
+        En el calendario estará toda la información de las peleas que tengan una fecha defini determinada, 
+        de todas las ligas ligas definidas previamente. En cada pelea se mostrarán tanto los luchadores
+        con acceso a sus perfiles, como la liga en la que pelean.
+      </p>
+      <p>El calendario será vertical, mostrando únicamente los días en los que haya una pelea.</p>
+      <a href="#id_inicio" style="float: right; color: rgb(110, 30, 144);"><span
+          style="font-size: 30px;">↑</span>Volver</a>
+    </div>
+    <!------------------------------------------>
+
+    <div class="container" id="id_videos">
+      <h3><strong>5. Vídeos:</strong></h3>
+      <p>
+        Aquí se mostrarán los vídeos existentes en los artículos creados en noticias. Igualmente se podrán
+        subir vídeos a esta entrada de forma individual.
+      </p>
+      <a href="#id_inicio" style="float: right; color: rgb(110, 30, 144);"><span
+          style="font-size: 30px;">↑</span>Volver</a>
+    </div>
+    <!------------------------------------------>
+
+    <div class="container" id="id_sorteos">
+      <h3><strong>6. Sorteos:</strong></h3>
+      <p>
+
+      </p>
+      <a href="#id_inicio" style="float: right; color: rgb(110, 30, 144);"><span
+          style="font-size: 30px;">↑</span>Volver</a>
+    </div>
+    <!------------------------------------------>
+
+    <div class="container" id="id_sobre_nosotros">
+      <h3><strong>7. Sobre Nosotros:</strong></h3>
+      <p>
+
+      </p>
+      <a href="#id_inicio" style="float: right; color: rgb(110, 30, 144);"><span
+          style="font-size: 30px;">↑</span>Volver</a>
+    </div>
+
+
   </main>
 </body>
 
